@@ -1,0 +1,82 @@
+// .otp-container{
+//     border-radius: 10px;
+//     display: flex;
+//     flex-direction: column;
+//     font-family: Gotham-light;
+// }
+.otp-container {
+    width: 90%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+
+
+    .heading {
+        font-size: 20px;
+        font-family: Gotham;
+        color: green;
+        margin: 1rem 0rem;
+    }
+
+    .otp-form-container {
+        border: 3px solid green;
+        display: flex;
+        border-radius: 15px;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        font-family: Gotham-light;
+
+
+        .input-container {
+            width: 100%;
+            text-align: center;
+
+            .input-field {
+                text-align: center;
+                border-radius: 5px;
+            }
+        }
+
+        .resend-container {
+            margin: 20px auto;
+            color: green;
+            font-weight: bold;
+        }
+
+        .btn-field {
+            margin: 2rem 0;
+
+            input {
+                width: 80%;
+            }
+        }
+
+
+
+    }
+}
+
+
+
+// .blink-container {
+//     text-align: center;
+//     margin: .5rem;
+//   }
+  
+//   .blink-text {
+//     font-size: 1rem;
+//     font-weight: bold;
+//     color: #ff0000;
+//     animation: blink 1s infinite; // Using the animation
+  
+//     // Defining the blink animation
+//     @keyframes blink {
+//       0% { opacity: 1; }   // Fully visible
+//       50% { opacity: 0; }  // Invisible
+//       100% { opacity: 1; } // Fully visible again
+//     }
+//   }

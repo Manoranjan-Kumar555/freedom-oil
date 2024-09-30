@@ -1,0 +1,16 @@
+.already-container{
+    border: 2px solid green;
+    height: 20vh;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem;
+    border-radius: 20px;
+    p{
+        font-size: 18px;
+        color: green;
+        font-family: Gotham-light;
+        font-weight: bold;
+    }
+}

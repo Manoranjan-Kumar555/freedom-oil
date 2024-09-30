@@ -1,0 +1,93 @@
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-image: url("./assets/images/freedom-background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;  
+  background-size: 100% 100%;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+
+
+
+@font-face {
+  font-family: Gotham;
+  src: url(./assets/fonts/Gotham-Black.otf);
+}
+@font-face {
+  font-family: Gotham-light;
+  src: url(./assets/fonts/Gotham-Light.otf);
+}
+
+@font-face {
+  font-family: swiss-bt;
+  src: url(./assets/fonts/Swiss.ttf);
+}
+
+/* @import "mixins"; */
+@mixin hideScroll {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+
+  &::-webkit-scrollbar {
+    background: transparent; /* Chrome/Safari/Webkit */
+    width: 0;
+  }
+}
+
+.App {
+  text-align: center;
+  height: 100svh;  
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
+  
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin: 0 auto;
+    max-width: 375px;
+    @include hideScroll;  
+  }
+}

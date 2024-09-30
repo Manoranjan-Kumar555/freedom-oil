@@ -1,0 +1,24 @@
+.how-pages {
+    padding: 10px;
+  
+    .how-p {
+      padding: 1rem 0;
+      text-align: start;
+      padding: 10px;
+      border: 1px solid #000;
+      overflow-y: scroll; 
+      height: 200px; 
+      &::-webkit-scrollbar {
+        display: none;
+      }
+  
+      -ms-overflow-style: none; 
+      scrollbar-width: none; 
+      .how-heading{
+        font-family: Gotham;
+        font-size: 1.2rem;
+        margin: 2rem 0;
+      }
+    }
+  }
+  
